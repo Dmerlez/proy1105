@@ -8,6 +8,8 @@ $totusd=$_POST["totalusd"];
 $ano=$_POST["ano"];
 
 $sql="INSERT INTO productos(nombre,totalusd,ano) values('$nom',$totusd,$ano)";
+    
+$conn->objconn->query($sql);
 
 echo $sql;
         
